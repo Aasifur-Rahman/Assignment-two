@@ -26,6 +26,7 @@ main{
 
 
 
+
 hr{
     border: 1px solid whitesmoke;
     margin-bottom: 27px;
@@ -60,8 +61,9 @@ hr{
 }
 
 .top-button{
+    
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
@@ -69,6 +71,11 @@ hr{
     color: white;
     
     background-color: #E02C6D;
+    
+}
+.top-button:hover{
+    border-radius: 20px;
+    transition: border-radius 400ms ease-in-out;
 }
 
 .fa-arrow-right{
@@ -97,19 +104,29 @@ hr{
 
  /* ----------------Popular Products/gear-------------
  -------------------------------------------------------- */
-
+.mid-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 .gears{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
     
 }
 
+
+
 .gear{
+    
     padding: 14px;
     background-color: white;
     box-shadow: 0px 10px 10px 10px #1818180e;
 }
+
+
 
 
 .gear .gear-banner img{
@@ -117,14 +134,17 @@ hr{
     height: 256px;
 }
 
+
+
 .gear-title{
 
     color: black;
     font-size: 28px;
-    font-weight: 500;
+   
 }
 
 .price-tag{
+
     color: black;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
@@ -147,5 +167,20 @@ hr{
 
 
 .shipping-text{
+    font-size: 14px;
    color: #787885 ; 
+}
+
+
+
+/* -------extra---------
+-------------------------*/
+
+.next-page{
+    padding-top: 50px;
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    color: #E02C6D;
+    text-decoration: none;
 }
